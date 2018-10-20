@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".HomepageActivity"
+    >
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/logout"
+        android:layout_width="84dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/plusbutton"
+        android:layout_marginStart="38dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_arrow_back_black_24dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/plusbutton"
+        android:layout_width="84dp"
+        android:layout_height="76dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="37dp"
+        android:clickable="true"
+        android:src="@drawable/ic_add_black_24dp"
+        android:focusable="true" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginTop="50dp"
+        android:text="Switch" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="cursive"
+        android:text="Name"
+        android:textColor="#ffffff"
+        android:textSize="45sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_list"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="117dp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+</RelativeLayout>
